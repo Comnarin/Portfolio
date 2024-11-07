@@ -7,9 +7,6 @@ Welcome to my personal portfolio! This project showcases my work, skills, and ex
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contact](#contact)
 
 ## Overview
 
