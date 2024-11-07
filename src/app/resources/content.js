@@ -203,7 +203,7 @@ const about = {
                 description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
                 images: [
                     {
-                        src: '/images/skills/react.png',
+                        src: '/images/skills/React.png',
                         alt: 'Skills',
                         width: 10,
                         height: 9
