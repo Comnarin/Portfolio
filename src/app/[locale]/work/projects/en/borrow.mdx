@@ -1,0 +1,40 @@
+---
+title: "IoT-Enabled Equipment Borrowing System"
+publishedAt: "2024-11-07"
+summary: "An IoT-powered equipment borrowing system that streamlines the process of reserving, borrowing, and tracking equipment using an ESP32 microcontroller, FastAPI for backend management, PostgreSQL for database storage, and React for the frontend interface."
+technologies:
+  - ESP32
+  - FastAPI
+  - PostgreSQL
+  - React
+images:
+  - "/images/projects/borrow/borrow-01.png"
+  - "/images/projects/borrow/borrow-02.png"
+  - "/images/projects/borrow/borrow-03.png"
+---
+
+## Overview
+
+The IoT-Enabled Equipment Borrowing System is designed to simplify the borrowing and management of equipment in institutions or workplaces. The system leverages an ESP32 microcontroller for user authentication and equipment tracking, FastAPI for backend processes, PostgreSQL for reliable data storage, and a React frontend for user interactions. This comprehensive setup allows users to reserve equipment online, verify their identity via an ESP32 device, and return equipment seamlessly.
+
+## Key Features
+
+- **IoT Authentication with ESP32**: Integrated ESP32 microcontroller to handle user authentication via RFID or keypad. When a user scans their ID, the ESP32 communicates with the FastAPI backend to check and update the status of the equipment.
+- **Reservation and Availability Management**: Users can reserve equipment in advance through the React-based frontend, which interacts with the FastAPI backend to update equipment availability and manage reservations.
+- **FastAPI Backend**: Built a secure and responsive backend with FastAPI to manage equipment records, handle user authentication, and process borrow/return transactions. The FastAPI backend also communicates with the ESP32 to update equipment status in real-time.
+- **PostgreSQL Database**: Designed a PostgreSQL database schema to store equipment details, reservation data, user profiles, and transaction logs, ensuring that all records are stored efficiently and reliably.
+- **React Frontend**: Developed a responsive, user-friendly interface with React, allowing users to browse available equipment, make reservations, and view their borrowing history.
+
+## Challenges and Learnings
+
+- **ESP32 and FastAPI Communication**: Setting up secure and real-time communication between the ESP32 device and FastAPI was challenging. Using RESTful APIs, I ensured that the ESP32 could reliably retrieve and update equipment status based on user actions.
+- **Concurrency in Reservations**: Implemented concurrency control to prevent multiple users from reserving the same equipment simultaneously, using PostgreSQL transactions to maintain data consistency.
+- **User Experience and Real-Time Feedback**: Designed the system to provide users with real-time feedback on equipment availability and reservation status, enhancing the overall user experience.
+
+## Outcome
+
+The IoT-Enabled Equipment Borrowing System has proven effective in streamlining the equipment borrowing process. By integrating IoT capabilities through the ESP32, users can conveniently reserve and borrow equipment with real-time status updates. The use of FastAPI, PostgreSQL, and React ensures that the system is responsive, secure, and easily maintainable, making it a valuable solution for managing institutional equipment effectively.
+
+---
+
+This file captures your use of ESP32, FastAPI, PostgreSQL, and React in building an equipment borrowing system, and highlights your role in each aspect. Let me know if you need any tweaks!

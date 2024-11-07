@@ -2,15 +2,15 @@ import { InlineCode } from "@/once-ui/components";
 
 const createI18nContent = (t) => {
     const person = {
-        firstName: 'Selene',
-        lastName:  'Yu',
+        firstName: 'Narin',
+        lastName:  'Sirinapuk',
         get name() {
             return `${this.firstName} ${this.lastName}`;
         },
-        role:      t("person.role"),
+        role:      'Software Engineer',
         avatar:    '/images/avatar.jpg',
-        location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-        languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+        location:  'Asia/Bangkok',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+        languages: ['English', 'Thai']  // optional: Leave the array empty if you don't want to display languages
     }
 
     const newsletter = {
@@ -25,12 +25,12 @@ const createI18nContent = (t) => {
         {
             name: 'GitHub',
             icon: 'github',
-            link: 'https://github.com/once-ui-system/nextjs-starter',
+            link: 'https://github.com/comnarin',
         },
         {
             name: 'LinkedIn',
             icon: 'linkedin',
-            link: 'https://www.linkedin.com/company/once-ui/',
+            link: 'https://www.linkedin.com/in/narin-sirinapuk-870081294/',
         },
         {
             name: 'X',
@@ -40,22 +40,23 @@ const createI18nContent = (t) => {
         {
             name: 'Email',
             icon: 'email',
-            link: 'mailto:example@gmail.com',
+            link: 'mailto:nsirinapuk@gmail.com',
         },
     ]
 
     const home = {
-        label: t("home.label"),
-        title: t("home.title", {name: person.name}),
-        description: t("home.description", {role: person.role}),
-        headline: <>{t("home.headline")}</>,
-        subline: <>{t("home.subline")}</>
+        label: 'Home',
+        title: `${person.name}'s Portfolio`,
+        description: `Portfolio website showcasing my work as a ${person.role}`,
+        headline: <>Computer Engineering Student</>,
+        subline: <>I'm Narin, a computer engineering student and current intern at <InlineCode>TCC-Tech</InlineCode>. I craft intuitive user experiences and build my own projects in my spare time.</>
+    
     }
-
+    
     const about = {
-        label: t("about.label"),
-        title: t("about.label"),
-        description: t("about.description", {name: person.name, role: person.role, location: person.location}),
+        label: 'About',
+        title: 'About me',
+        description: `Meet ${person.name}, ${person.role} from ${person.location}`,
         tableOfContent: {
             display: true,
             subItems: true
@@ -64,26 +65,29 @@ const createI18nContent = (t) => {
             display: true
         },
         calendar: {
-            display: true,
+            display: false ,
             link: 'https://cal.com'
         },
         intro: {
             display: true,
-            title: t("about.intro.title"),
-            description: <>{t("about.intro.description")}</>
+            title: 'Introduction',
+            description: <>I'm a computer engineering student and intern at Tcc-tech, passionate about solving complex challenges through technology. My work spans software development and the intersection of engineering and innovation.</>
         },
         work: {
             display: true, // set to false to hide this section
-            title: t("about.work.title"),
+            title: 'Work Experience',
             experiences: [
                 {
-                    company: 'FLY',
-                    timeframe: t("about.work.experiences.FLY.timeframe"),
-                    role: t("about.work.experiences.FLY.role"),
-                    achievements: t("about.work.experiences.FLY.achievements").split(";"),
+                    company: 'TCC-Tech',
+                    timeframe: '2024 - Present',
+                    role: 'Software Engineer',
+                    achievements: [
+                        <>Developed a WMS microservice using C# .NET and Next.js, improving system efficiency and scalability.</>,
+                        <>Contributed to the development of the Little John food delivery app using Go Lang and React.</>
+                    ],
                     images: [ // optional: leave the array empty if you don't want to display images
                         {
-                            src: '/images/projects/project-01/cover-01.jpg',
+                            src: '/images/gallery/img-02.jpg',
                             alt: 'Once UI Project',
                             width: 16,
                             height: 9
@@ -91,11 +95,30 @@ const createI18nContent = (t) => {
                     ]
                 },
                 {
-                    company: 'Creativ3',
-                    timeframe: t("about.work.experiences.Creativ3.timeframe"),
-                    role: t("about.work.experiences.Creativ3.role"),
-                    achievements: t("about.work.experiences.Creativ3.achievements").split(";"),
-                    images: [ ]
+                    company: 'University Project',
+                    timeframe: '2021 - 2024',
+                    role: 'Computer Engineering Student',
+                    achievements: [
+                        <>Developed the HAYA Mobile Application using Figma for UI/UX and Flutter for cross-platform development, incorporating AI to recognize medicines within the app.</>,
+                        <>Built the T-PAK Dormitory Matching Platform using React and Node.js, enabling users to find available dorms across Thailand.</>,
+                        <>Engineered a robust search engine using Python that combines web scraping, NLP, and an inverted index for efficient information retrieval.</>,
+                        <>Developed a Face Recognition Attendance System with Line Chat Integration using Python and Line Chat API for efficient attendance tracking.</>,
+                        <>Created a real-time COVID-19 infection and vaccination rate visualization web app, using Python for web scraping and FastAPI for backend-to-frontend data transmission.</>
+                    ],
+                    images: [
+                        {
+                        src: '/images/gallery/haya.png',
+                        alt: 'Once UI Project',
+                        width: 16,
+                        height: 9
+                        } ,
+                        {
+                            src: '/images/gallery/covid.png',
+                            alt: 'Once UI Project',
+                            width: 16,
+                            height: 9
+                        } ,
+                ]
                 }
             ]
         },
@@ -104,49 +127,115 @@ const createI18nContent = (t) => {
             title: 'Studies',
             institutions: [
                 {
-                    name: 'University of Jakarta',
-                    description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
+                    name: 'King Mongkut’s University of Technology North Bangkok',
+                    description: <>Bachelor of Computer Engineering 2021-2025 , First Class Honor with GPA 3.60</>,
                 },
+                
                 {
-                    name: 'Build the Future',
-                    description: <>{t("about.studies.institutions.Build the Future.description")}</>,
+                    name: 'Franklin Regional High School',
+                    description: <>USA Exchange Student 2017-2018</>,
                 }
             ]
         },
         technical: {
             display: true, // set to false to hide this section
-            title: t("about.technical.title"),
+            title: 'Technical skills',
             skills: [
+                
                 {
-                    title: 'Figma',
-                    description: <>{t("about.technical.skills.Figma.description")}</>,
+                    title: 'Node',
+                    description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
                     images: [
                         {
-                            src: '/images/projects/project-01/cover-02.jpg',
-                            alt: 'Project image',
-                            width: 16,
+                            src: '/images/skills/node.png',
+                            alt: 'Skills',
+                            width: 20,
                             height: 9
                         },
+                        
+                    ]
+                },
+                {
+                    title: 'GO',
+                    description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                    images: [
                         {
-                            src: '/images/projects/project-01/cover-03.jpg',
-                            alt: 'Project image',
-                            width: 16,
+                            src: '/images/skills/go.png',
+                            alt: 'Skills',
+                            width: 20,
                             height: 9
                         },
                     ]
                 },
                 {
-                    title: 'Next.js',
-                    description: <>{t("about.technical.skills.Nextjs.description")}</>, // "." not accepted in next-intl namespace
+                    title: 'C#(.NET)',
+                    description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
                     images: [
                         {
-                            src: '/images/projects/project-01/cover-04.jpg',
-                            alt: 'Project image',
-                            width: 16,
+                            src: '/images/skills/c.png',
+                            alt: 'Skills',
+                            width: 10,
+                            height: 9
+                        },
+                        {
+                            src: '/images/skills/dotnet.png',
+                            alt: 'Skills',
+                            width: 9,
                             height: 9
                         },
                     ]
-                }
+                },
+                
+                {
+                    title: 'Python',
+                    description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                    images: [
+                        {
+                            src: '/images/skills/python.png',
+                            alt: 'Skills',
+                            width: 9,
+                            height: 9
+                        },
+                        
+                    ]
+                },
+                {
+                    title: 'React',
+                    description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                    images: [
+                        {
+                            src: '/images/skills/react.png',
+                            alt: 'Skills',
+                            width: 10,
+                            height: 9
+                        }
+                    ]
+                },
+                {
+                    title: 'Git',
+                    description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                    images: [
+                        {
+                            src: '/images/skills/git.png',
+                            alt: 'Skills',
+                            width: 21,
+                            height: 9
+                        },
+                    ]
+                },
+                {
+                    title: 'RabbitMQ',
+                    description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                    images: [
+                        {
+                            src: '/images/skills/rabbitmq.png',
+                            alt: 'Skills',
+                            width: 10,
+                            height: 9
+                        },
+                    ]
+                },
+               
             ]
         }
     }

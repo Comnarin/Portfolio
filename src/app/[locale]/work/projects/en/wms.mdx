@@ -1,0 +1,43 @@
+---
+title: "Building a Warehouse Management System "
+publishedAt: "2024-11-07"
+summary: "In this project, I developed the backend APIs for a Warehouse Management System (WMS), using C# .NET for the services and PostgreSQL for data persistence."
+technologies:
+  - C# .NET
+  - PostgreSQL
+  - RabbitMQ
+  - Clean Architecture
+images:
+  - "/images/projects/wms/wms-01.png"
+  - "/images/projects/wms/wms-02.png"
+  - "/images/projects/wms/wms-03.png"
+  - "/images/projects/wms/wms-04.png"
+  - "/images/projects/wms/wms-05.png"
+team:
+  - name: "Narin"
+    role: "Backend API Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/narin/"
+---
+
+## Overview
+
+In this project, I focused on developing the backend API for a Warehouse Management System (WMS). The system consists of three core services: **Inbound**, **Inventory**, and **Outbound**. These services are designed to manage the warehouse operations, including stock intake, inventory management, and order fulfillment. The APIs communicate asynchronously using RabbitMQ to ensure decoupled and scalable interactions.
+
+## Key Features
+
+- **Backend APIs**: Developed robust RESTful APIs to handle requests related to product intake (Inbound), stock management (Inventory), and order fulfillment (Outbound).
+- **RabbitMQ Communication**: Used RabbitMQ to enable asynchronous communication between the services, improving the scalability and performance of the system by decoupling the services.
+- **PostgreSQL Database**: Designed an efficient database schema using PostgreSQL for storing warehouse-related data such as products, stock levels, orders, and transactions.
+- **Clean Architecture**: Implemented clean architecture principles to ensure code modularity, maintainability, and easy testing. The API layer is separated from business logic and data access, making the system easier to extend and maintain.
+
+## Challenges and Learnings
+
+- **API Design**: Designing RESTful APIs that are both scalable and maintainable, ensuring that each service is self-contained yet capable of interacting efficiently with the others.
+- **RabbitMQ Integration**: Handling the complexity of asynchronous message queuing between services, making sure that each service can process messages in a timely and reliable manner.
+- **Database Schema Optimization**: Ensuring that the PostgreSQL schema supports large volumes of data while maintaining efficient query performance and data integrity.
+
+## Outcome
+
+The backend API for the WMS is now functional, with the three services communicating effectively through RabbitMQ. The use of clean architecture has allowed for easy maintenance and scalability. The PostgreSQL database is optimized for the warehouse system’s needs, ensuring that the system is both efficient and reliable.
+
