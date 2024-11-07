@@ -70,7 +70,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>I'm a computer engineering student and intern at Tcc-tech, passionate about solving complex challenges through technology. My work spans software development and the intersection of engineering and innovation.</>
+        description: <>I'm a computer engineering student and intern at Tcc-tech, passionate about solving complex challenges through technology.</>
     },
     work: {
         display: true, // set to false to hide this section
@@ -316,21 +316,21 @@ const gallery = {
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-12.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-13.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-14.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
+        // { 
+        //     src: '/images/gallery/img-12.jpg', 
+        //     alt: 'image',
+        //     orientation: 'horizontal'
+        // },
+        // { 
+        //     src: '/images/gallery/img-13.jpg', 
+        //     alt: 'image',
+        //     orientation: 'horizontal'
+        // },
+        // { 
+        //     src: '/images/gallery/img-14.jpg', 
+        //     alt: 'image',
+        //     orientation: 'horizontal'
+        // },
     ]
 }
 
