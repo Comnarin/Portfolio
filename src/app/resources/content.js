@@ -126,7 +126,7 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'King Mongkut’s University of Technology North Bangkok',
+                name: 'KMUTNB',
                 description: <>Bachelor of Computer Engineering 2021-2025 , First Class Honor with GPA 3.60</>,
             },
             

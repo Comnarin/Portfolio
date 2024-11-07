@@ -10,7 +10,7 @@ const i18nOptions = {
 }
 
 const routes = {
-    '/':        false,
+    '/':        true,
     '/about':   true,
     '/work':    true,
     '/blog':    false,
@@ -43,7 +43,7 @@ const style = {
 
 const display = {
     location: true,
-    time:     true
+    time:     false
 }
 
 const mailchimp = {
