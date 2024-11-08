@@ -102,7 +102,6 @@ const createI18nContent = (t) => {
                         <>Developed the HAYA Mobile Application using Figma for UI/UX and Flutter for cross-platform development, incorporating AI to recognize medicines within the app.</>,
                         <>Built the T-PAK Dormitory Matching Platform using React and Node.js, enabling users to find available dorms across Thailand.</>,
                         <>Engineered a robust search engine using Python that combines web scraping, NLP, and an inverted index for efficient information retrieval.</>,
-                        <>Developed a Face Recognition Attendance System with Line Chat Integration using Python and Line Chat API for efficient attendance tracking.</>,
                         <>Created a real-time COVID-19 infection and vaccination rate visualization web app, using Python for web scraping and FastAPI for backend-to-frontend data transmission.</>
                     ],
                     images: [
@@ -114,6 +113,18 @@ const createI18nContent = (t) => {
                         } ,
                         {
                             src: '/images/gallery/covid.png',
+                            alt: 'Once UI Project',
+                            width: 16,
+                            height: 9
+                        } ,
+                        {
+                            src: '/images/gallery/img-11.jpg',
+                            alt: 'Once UI Project',
+                            width: 16,
+                            height: 9
+                        } ,
+                        {
+                            src: '/images/projects/Tpak/tpak-02.png',
                             alt: 'Once UI Project',
                             width: 16,
                             height: 9

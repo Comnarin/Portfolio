@@ -70,7 +70,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>I'm a computer engineering student and intern at Tcc-tech, passionate about solving complex challenges through technology.</>
+        description: <>I'm a computer engineering student and intern at TCC-Tech, passionate about solving complex challenges through technology.</>
     },
     work: {
         display: true, // set to false to hide this section
@@ -101,7 +101,6 @@ const about = {
                     <>Developed the HAYA Mobile Application using Figma for UI/UX and Flutter for cross-platform development, incorporating AI to recognize medicines within the app.</>,
                     <>Built the T-PAK Dormitory Matching Platform using React and Node.js, enabling users to find available dorms across Thailand.</>,
                     <>Engineered a robust search engine using Python that combines web scraping, NLP, and an inverted index for efficient information retrieval.</>,
-                    <>Developed a Face Recognition Attendance System with Line Chat Integration using Python and Line Chat API for efficient attendance tracking.</>,
                     <>Created a real-time COVID-19 infection and vaccination rate visualization web app, using Python for web scraping and FastAPI for backend-to-frontend data transmission.</>
                 ],
                 images: [
@@ -112,7 +111,19 @@ const about = {
                     height: 9
                     } ,
                     {
-                        src: '/images/gallery/covid.png',
+                    src: '/images/gallery/covid.png',
+                    alt: 'Once UI Project',
+                    width: 16,
+                    height: 9
+                    } ,
+                    {
+                        src: '/images/gallery/img-11.jpg',
+                        alt: 'Once UI Project',
+                        width: 16,
+                        height: 9
+                    } ,
+                    {
+                        src: '/images/projects/Tpak/tpak-02.png',
                         alt: 'Once UI Project',
                         width: 16,
                         height: 9
@@ -142,53 +153,33 @@ const about = {
         skills: [
             
             {
-                title: 'Node',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                title: 'Backend',
+                description: <>Node JS , Express , Go Lang , C#(.Net) , Python</>,
                 images: [
                     {
                         src: '/images/skills/node.png',
                         alt: 'Skills',
-                        width: 20,
+                        width: 9,
                         height: 9
                     },
-                    
-                ]
-            },
-            {
-                title: 'GO',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                images: [
+                    {
+                        src: '/images/skills/express-js.png',
+                        alt: 'Skills',
+                        width: 9,
+                        height: 9
+                    },
                     {
                         src: '/images/skills/go.png',
-                        alt: 'Skills',
-                        width: 20,
-                        height: 9
-                    },
-                ]
-            },
-            {
-                title: 'C#(.NET)',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                images: [
-                    {
-                        src: '/images/skills/c.png',
                         alt: 'Skills',
                         width: 10,
                         height: 9
                     },
                     {
-                        src: '/images/skills/dotnet.png',
+                        src: '/images/skills/c.png',
                         alt: 'Skills',
                         width: 9,
                         height: 9
                     },
-                ]
-            },
-            
-            {
-                title: 'Python',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                images: [
                     {
                         src: '/images/skills/python.png',
                         alt: 'Skills',
@@ -199,37 +190,104 @@ const about = {
                 ]
             },
             {
-                title: 'React',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                title: 'Frontend',
+                description: <>React , HTML , CSS , JavaScript</>,
                 images: [
                     {
                         src: '/images/skills/React.png',
                         alt: 'Skills',
-                        width: 10,
+                        width: 9,
+                        height: 9
+                    },
+                    {
+                        src: '/images/skills/html.png',
+                        alt: 'Skills',
+                        width: 9,
+                        height: 9
+                    },
+                    {
+                        src: '/images/skills/css.png',
+                        alt: 'Skills',
+                        width: 9,
+                        height: 9
+                    },
+                    {
+                        src: '/images/skills/js.png',
+                        alt: 'Skills',
+                        width: 9,
+                        height: 9
+                    },
+                    {
+                        src: '/images/skills/bootstrap.png',
+                        alt: 'Skills',
+                        width: 9,
+                        height: 9
+                    },
+                    {
+                        src: '/images/skills/tailwind.png',
+                        alt: 'Skills',
+                        width: 9,
                         height: 9
                     }
                 ]
             },
             {
-                title: 'Git',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'Database',
+                description: <>MySQL , PostgreSQL , MongoDB </>,
+                images: [
+                    {
+                        src: '/images/skills/mysql.png',
+                        alt: 'Skills',
+                        width: 9,
+                        height: 9
+                    },
+                    {
+                        src: '/images/skills/pg.png',
+                        alt: 'Skills',
+                        width: 9,
+                        height: 9
+                    },
+                    {
+                        src: '/images/skills/mongo.png',
+                        alt: 'Skills',
+                        width: 9,
+                        height: 9
+                    },
+          
+                ]
+            },
+            {
+                title: 'Tools',
+                description: <>Git , Docker , Redis , Postman , RabbitMQ </>,
                 images: [
                     {
                         src: '/images/skills/git.png',
                         alt: 'Skills',
-                        width: 21,
+                        width: 9,
                         height: 9
                     },
-                ]
-            },
-            {
-                title: 'RabbitMQ',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                images: [
+                    {
+                        src: '/images/skills/docker.png',
+                        alt: 'Skills',
+                        width: 9,
+                        height: 9
+                    },
+                    {
+                        src: '/images/skills/redis.png',
+                        alt: 'Skills',
+                        width: 10,
+                        height: 9
+                    },
+                    {
+                        src: '/images/skills/postman.png',
+                        alt: 'Skills',
+                        width: 10,
+                        height: 9
+                    },
                     {
                         src: '/images/skills/rabbitmq.png',
                         alt: 'Skills',
-                        width: 10,
+                        width: 9,
                         height: 9
                     },
                 ]
